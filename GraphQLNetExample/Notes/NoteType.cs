@@ -6,8 +6,10 @@ namespace GraphQLNetExample.Notes
     {
         public NoteType()
         {
-            nameof = "Note";
+            Name = "Note";
             Description = "Note Type";
+            Field(d => d.Id, nullable: false).Description("The ID of the note");
+            Field(d => d.Message, nullable: true).Description("Note message");
         }
     }
 }
