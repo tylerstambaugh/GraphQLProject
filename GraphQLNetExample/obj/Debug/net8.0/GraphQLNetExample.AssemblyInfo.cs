@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GraphQLNetExample")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b01424e695fb51ef1c6e55d3e36c7dddd64db69")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb93396cfa9ae3d340face73e8bd011e96411587")]
 [assembly: System.Reflection.AssemblyProductAttribute("GraphQLNetExample")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GraphQLNetExample")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

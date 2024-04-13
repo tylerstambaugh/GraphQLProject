@@ -1,4 +1,5 @@
 using GraphQL.Types;
+using GraphQLNetExample.Data;
 
 namespace GraphQLNetExample.Notes
 {
@@ -10,7 +11,12 @@ namespace GraphQLNetExample.Notes
             {
                 new Note { Id = Guid.NewGuid(), Message = "This is the first note buster" },
                 new Note { Id = Guid.NewGuid(), Message = "This is the second note big fella" },
+            });
 
+            Field<ListGraphType<NoteType>>("notesFromEF", resolve: context =>
+            {
+                var notesContext = context.RequestServices.GetRequiredService<NotesContext>();
+                return notesContext.Notes.ToList();
             });
         }
     }
